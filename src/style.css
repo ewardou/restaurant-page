@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+#content{
+    min-height:100vh;
+    display: grid;
+    grid-template-rows: min-content 1fr;
+}
+ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap:10%;
+    padding: 10px;
+    color:white;
+    font-weight: bold;
+    background-color: blue;
+}
+main{
+    background-color: yellow;
+}
