@@ -1,9 +1,14 @@
+import logo from "./PngItem_3433384.png";
+
 function createLayout(){
     let createElement=(type,content="")=>{
         let element=document.createElement(type);
         element.textContent=content;
         return element
     };
+
+    let image=createElement("img");
+    image.setAttribute("src",logo);
 
     let header=createElement("header");
     let tabsContainer=createElement("ul");
@@ -17,12 +22,13 @@ function createLayout(){
 
     tabsContainer.append(homeTab,menuTab,contactTab);
 
-    header.append(tabsContainer);
+    header.append(image,tabsContainer);
     let main=createElement("main");
 
     return {
         header,
-        main
+        main,
+        createElement
     };
 }
 
