@@ -14,14 +14,14 @@
 img{
     height: 60px;
 }
-div{
+.tabs{
     position: sticky;
     top: 0px;
 }
 div>ul{
     list-style: none;
     display: flex;
-    padding: 5px;
+    padding: 7px;
     gap:40px;
     font-size: 1.2rem;
     color:white;
@@ -62,6 +62,12 @@ div>ul>li:hover{
 }
 div>ul>li:active{
     color: rgb(247, 138, 138);
+}
+div>ul>li.active{
+    border-bottom: 2px solid white;
+    transition: 100ms ease-in-out;
+    position: relative;
+    bottom: 3px;
 }
 .policies h2{
     margin-bottom: 10px;
