@@ -3,6 +3,8 @@ import coralBitsImage from "./Coral_Bits.jpg";
 import kelpShakeImage from "./kelp_shake.jpg";
 import krabySupremeImage from "./super_kraby_supreme.jpg";
 import krabbyPattyImage from "./krabby_patty.jpg";
+import pizza from "./pizza.jpg";
+import kelpFriesImage from "./kelp_fries.jpeg";
 
 function createMenuSection(){
 
@@ -27,8 +29,11 @@ function createMenuSection(){
 
     let ultraKrabySupreme=createItem("Ultra Krabby Supreme","Larger variation of the Krabby Patty. The outside is a yellow-ish color like batter. It can also be batter-fried twice, or be on a stick, only if the customer requests it.",6,krabySupremeImage);
 
+    let krustyKrabPizza=createItem("Krusty Krab Pizza","A tray of Krabby Patties fused together, and flattened in the form of a pizza. It has eight slices.",4.50,pizza);
+    let kelpFries=createItem("Kelp Fries","Fries that resemble seaweed with the way they are shaped.",1,kelpFriesImage);
+
     let menuSection=createLayout().createElement("section");
-    menuSection.append(krabbyPatty,coralBits,kelpShake,ultraKrabySupreme);
+    menuSection.append(krabbyPatty,coralBits,kelpShake,ultraKrabySupreme,krustyKrabPizza,kelpFries);
 
     let render=function(){
         menuSection.classList.add("menu");
