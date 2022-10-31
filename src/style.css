@@ -21,16 +21,16 @@ img{
 div>ul{
     list-style: none;
     display: flex;
-    padding: 7px;
+    padding: 5px;
     gap:40px;
     font-size: 1.2rem;
     color:white;
-    background-color: rgb(247, 83, 62);
+    background-color: rgb(6, 6, 204);
     justify-content: center;
     font-weight: bold;
 }
 header{
-    background-color: rgb(247, 83, 62);
+    background-color: rgb(6, 6, 204);
     padding: 5px;
     display:grid;
     grid-auto-rows: min-content;
@@ -38,14 +38,17 @@ header{
     gap:5px;
 }
 main{
-    background-color: rgb(252, 232, 232);
+    /* background-color: rgb(252, 232, 232); */
+    background-image: url(./img_freepik_com-bubbles-seamless-pattern-blue_1284-43368\ \(1\).jpg);
+    background-size: 330px;
+    padding: 40px 0px;
 }
 section{
     border:2px solid black;
     width: fit-content;
     padding: 15px;
     margin: 10px auto;
-    background-color: white;
+    background-color: rgba(255,255,255,0.9);
 } 
 section>img{
     height: 180px;
@@ -53,7 +56,7 @@ section>img{
 }
 div>ul>li{
     cursor: pointer;
-    /* border-bottom: 2px solid white; */
+    border-bottom: 2px solid rgba(255, 255, 255, 0);
 }
 div>ul>li:hover{
     color: rgb(248, 211, 211);
@@ -82,4 +85,65 @@ div>ul>li.active{
 }
 .policies li+li{
     margin-top:10px;
+}
+.menu{
+    border:none;
+    width:min(80%);
+    display: grid;
+    grid-auto-rows: 1fr;
+    grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
+    gap:20px;
+    background-color: rgba(255,255,255,0);
+    padding:0;
+}
+.menu>div{
+    background-color: rgba(255,255,255,0.9);
+    padding: 10px;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 1fr min-content;
+    column-gap: 10px;
+    border:solid black 2px;
+}
+.menu>div:hover{
+    transform: scale(1.05);
+    transition: 150ms ease-in-out;
+}
+.menu img{
+    grid-column: 2 / 3;
+    grid-row: 1 / 4;
+    height: 150px;
+    width: auto;
+}
+.contact>div{
+    display: flex;
+    align-items: center;
+    gap:5px;
+}
+.contact>div>img{
+    height: 40px;
+}
+.contact>img{
+    height: 360px;
+}
+form>div{
+    display: grid;
+    grid-template-columns: 80px 65%;
+    margin-top: 10px;
+}
+textarea{
+    height: 80px;
+    resize: none;
+}
+input,
+textarea{
+    padding: 3px;
+    font-size: 1rem;
+}
+form button{
+    padding: 5px 10px;
+    background-color: blue;
+    color:white;
+    font-weight: bold;
+    border: solid white 2px;
 }
