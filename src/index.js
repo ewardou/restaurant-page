@@ -8,7 +8,21 @@ import createContactSection from "./contact";
 let content=document.querySelector("#content");
 content.append(createLayout().header,createLayout().tabsContainer,createLayout().main);
 
-createHomeSection().render();
+function initializePage(){
+    createHomeSection().render();
+    document.querySelector("button").addEventListener("click",()=>{
+        removeContent();
+        menuTab.classList.add("active");
+        createMenuSection().render();
+    });
+};
+initializePage();
+
+document.querySelector("button").addEventListener("click",()=>{
+    removeContent();
+    menuTab.classList.add("active");
+    createMenuSection().render();
+})
 
 function removeContent(){
     let contentToRemove=document.querySelectorAll("section");
@@ -26,7 +40,7 @@ homeTab.classList.add("active");
 homeTab.addEventListener("click",()=>{
     removeContent();
     homeTab.classList.add("active");
-    createHomeSection().render();
+    initializePage();
 })
 
 let menuTab=document.querySelector("div>ul>li:nth-of-type(2)");
