@@ -1,10 +1,10 @@
 import createLayout from "./element";
-import coralBitsImage from "./Coral_Bits.jpg";
-import kelpShakeImage from "./kelp_shake.jpg";
-import krabySupremeImage from "./super_kraby_supreme.jpg";
-import krabbyPattyImage from "./krabby_patty.jpg";
-import pizza from "./pizza.jpg";
-import kelpFriesImage from "./kelp_fries.jpeg";
+import coralBitsImage from "./images/Coral_Bits.jpg";
+import kelpShakeImage from "./images/kelp_shake.jpg";
+import krabySupremeImage from "./images/super_kraby_supreme.jpg";
+import krabbyPattyImage from "./images/krabby_patty.jpg";
+import pizza from "./images/pizza.jpg";
+import kelpFriesImage from "./images/kelp_fries.jpeg";
 
 function createMenuSection(){
 

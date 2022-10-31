@@ -1,8 +1,8 @@
 import createLayout from "./element";
-import phoneImage from "./phone_icon.svg";
-import pacificOceanImage from "./pacific_ocean.png";
-import locationImage from "./location_icon.svg";
-import mailIcon from "./mail_icon.svg";
+import phoneImage from "./images/phone_icon.svg";
+import pacificOceanImage from "./images/pacific_ocean.png";
+import locationImage from "./images/location_icon.svg";
+import mailIcon from "./images/mail_icon.svg";
 
 function createContactSection(){
     let contactSection=createLayout().createElement("section");

@@ -39,7 +39,7 @@ header{
 }
 main{
     /* background-color: rgb(252, 232, 232); */
-    background-image: url(./img_freepik_com-bubbles-seamless-pattern-blue_1284-43368\ \(1\).jpg);
+    background-image: url(./images/img_freepik_com-bubbles-seamless-pattern-blue_1284-43368\ \(1\).jpg);
     background-size: 330px;
     padding: 40px 0px;
 }
@@ -59,12 +59,12 @@ div>ul>li{
     border-bottom: 2px solid rgba(255, 255, 255, 0);
 }
 div>ul>li:hover{
-    color: rgb(248, 211, 211);
+    color: rgb(143, 144, 229);
     position:relative;
     bottom: 3px;
 }
 div>ul>li:active{
-    color: rgb(247, 138, 138);
+    color: rgb(68, 88, 204);
 }
 div>ul>li.active{
     border-bottom: 2px solid white;
@@ -76,7 +76,7 @@ div>ul>li.active{
     margin-bottom: 10px;
 }
 .policies li{
-    list-style-image: url("./burger-svgrepo-com-2.svg");
+    list-style-image: url("./images/burger-svgrepo-com-2.svg");
     list-style-position: inside;
     font-size: 1.2rem;
 }
@@ -146,4 +146,10 @@ form button{
     color:white;
     font-weight: bold;
     border: solid white 2px;
+}
+form button:hover{
+    background-color: rgb(27, 148, 189);
+}
+form button:active{
+    background-color: rgb(3, 3, 184);
 }

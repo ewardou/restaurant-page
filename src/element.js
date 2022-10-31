@@ -1,4 +1,4 @@
-import logo from "./PngItem_3433384.png";
+import logo from "./images/PngItem_3433384.png";
 
 function createLayout(){
     let createElement=(type,content="")=>{

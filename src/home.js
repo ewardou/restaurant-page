@@ -1,10 +1,21 @@
 import createLayout from "./element";
-import krustykrab from "./My_Two_Krabses_001.jpg";
+import krustykrab from "./images/My_Two_Krabses_001.jpg";
+import krabbyPattyImage from "./images/krabby_patty.jpg";
 
 function createHomeSection(){
+
+    let homeSection=createLayout().createElement("section");
+
+    let headerSection=createLayout().createElement("div");
+    let header=createLayout().createElement("h2","Welcome to the Krusty Krab, home of the famous Krabby Patty!");
+    let lorem=createLayout().createElement("p","Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Metus vulputate eu scelerisque felis imperdiet. Neque gravida in fermentum et. Ullamcorper a lacus vestibulum sed arcu non. Mauris a diam maecenas sed enim ut sem. Tincidunt tortor aliquam nulla facilisi cras fermentum odio eu.")
+    let krabbyPatty=createLayout().createElement("img");
+    krabbyPatty.setAttribute("src",krabbyPattyImage);
+
+    headerSection.append(header,lorem,krabbyPatty);
     //Location section
-    let locationSection=createLayout().createElement("section");
-    let locationTitle=createLayout().createElement("h2","Location");
+    let locationSection=createLayout().createElement("div");
+    let locationTitle=createLayout().createElement("h2","Visit us at");
     let locationPara=createLayout().createElement("p","831 Bottomfeeder Lane, Bikini Bottom, Pacific Ocean");
 
     let image=createLayout().createElement("img");
@@ -13,7 +24,7 @@ function createHomeSection(){
     locationSection.append(locationTitle,locationPara,image);
 
     //Schedule section
-    let scheduleSection=createLayout().createElement("section");
+    let scheduleSection=createLayout().createElement("div");
     let scheduleTitle=createLayout().createElement("h2","Schedule");
     let Sunday=createLayout().createElement("p","Sunday: 8am - 8pm");
     let Monday=createLayout().createElement("p","Monday: 6am - 6pm");
@@ -25,9 +36,11 @@ function createHomeSection(){
 
     scheduleSection.append(scheduleTitle,Sunday,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday);
 
+    homeSection.append(headerSection,locationSection,scheduleSection);
+
     let render=function(){
-        document.querySelector("main").appendChild(locationSection);
-        document.querySelector("main").appendChild(scheduleSection);
+        homeSection.classList.add("home");
+        document.querySelector("main").appendChild(homeSection);        
     }
     return {
         render

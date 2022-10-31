@@ -21,6 +21,14 @@ function removeContent(){
     })
 };
 
+let homeTab=document.querySelector("div>ul>li:first-of-type");
+homeTab.classList.add("active");
+homeTab.addEventListener("click",()=>{
+    removeContent();
+    homeTab.classList.add("active");
+    createHomeSection().render();
+})
+
 let menuTab=document.querySelector("div>ul>li:nth-of-type(2)");
 menuTab.addEventListener("click",()=>{
     removeContent();
